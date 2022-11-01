@@ -48,7 +48,37 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
-					
+          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='malle_image'>
+                  <img src='images/lensless2.png' width="160"></div>
+                <img src='images/lensless1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sagnik3141.github.io/lensless-disparity-web/">
+                <papertitle>Lensless Stereo Imaging</papertitle>
+              </a>
+              <br>
+              <a href="https://sagnik3141.github.io/lensless-disparity-web/">[project page]</a>
+	      <a href="https://github.com/sagnik3141/Lensless-Disparity.git">[code]</a>
+              <p></p>
+              <p>
+              This project is about predicting a disparity estimate from a pair of lensless measurements. We train a trainable inversion layer to undo the multiplexing followed by a stereo network end-to-end. We perform comparisons with wiener deconvolution followed by a stereo network on full and cropped lensless measurements and demostrate that our network is compaetitive with a two-stage method (image reconstruction followed by disparity estimation).
+              </p>
+            </td>
+          </tr>			
 					
           <tr onmouseout="malle_stop()" onmouseover="malle_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -73,7 +103,7 @@
                 <papertitle>Denoising Diffusion Probabilistic Models</papertitle>
               </a>
               <br>
-              <a href="https://drive.google.com/file/d/1MvObe53YWxmAn8MJT_VLG012MsPgFRuv/view?usp=sharing">session recording</a>
+              <a href="https://drive.google.com/file/d/1MvObe53YWxmAn8MJT_VLG012MsPgFRuv/view?usp=sharing">[session recording]</a>
               <p></p>
               <p>
               I conducted a session on a class of generative models called Denoising Diffusion Probabilistic Models (DDPMs) at the <a href="https://www.ee.iitm.ac.in/ipcvlab/">Image Processing and Computer Vision Lab, IIT Madras</a>. This session introduces the mathematical formulation behind DDPMs, conditional generation with DDPMs, and some recent advances like text-to-image with DDPMs (DALLE-2), superresolution and adversarial purification using DDPMs.
